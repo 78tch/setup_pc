@@ -1,6 +1,6 @@
 # 「/etc/inputrc」で「history-search-backward」を有効に  
   
-<img src="images/inputrc2.png" alt="image">  
+<img src="images/inputrc.gif" alt="image">  
 Ubuntu のデフォルトのシェルはBash（Dash）ですが、初期設定では「history-search-backward」が無効になっていますので、有効にします。  
 これはどういう機能かというと、コマンド実行履歴からコマンドを呼び出す際に、数文字入力しておくと、その数文字に前方一致する履歴だけを順に呼び出してくれる、という機能です。標準でも、上矢印キーを押せば、コマンド実行履歴をひとつずつさかのぼって呼び出すことができると思いますが、遠い昔に実行したコマンドの場合、なかなか呼び出せません。部分一致で呼び出す機能もありますが、呼び出したいコマンド以外のものもヒットしてしまったりします。  
 とにかく便利で、邪魔になる設定でもないと思うのでおすすめです。システム全体に反映させるには「/etc/inputrc」で設定し、カレントユーザーのみに反映させるには「~/.bashrc」で設定します。  
@@ -17,3 +17,4 @@ Ubuntu のデフォルトのシェルはBash（Dash）ですが、初期設定�
 "\e[B": history-search-forward  
 ```  
 5. 設定を有効にするには、一度ログオフしてログインし直します。  
+<img src="images/inputrc2.png" alt="image">  
