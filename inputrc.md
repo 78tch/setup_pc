@@ -10,7 +10,7 @@ Ubuntu のデフォルトのシェルはBash（Dash）ですが、初期設定�
 1. まずは<kbd>$ sudo vi /etc/inputrc</kbd>  
 2. <kbd>:/history</kbd>、<kbd>n</kbd>連打で「history-search-backward」の箇所を探す。  
 3. <kbd>y2</kbd>、<kbd>p</kbd>で２行コピペ。  
-4. 行頭の「# 」を削除するのと、「"\e[5~"」を「"\e[A"」に、「"\e[6~"」を「"\e[B"」に変更。これは、「page up/down」ボタンで呼び出すところを、「上下矢印キー」で呼び出す、に変更するという趣旨です。以下のようにします。  
+4. 行頭の「# 」を削除するのと、「"\e[5~"」を「"\e[A"」に、「"\e[6~"」を「"\e[B"」に変更。これは、「page up/down」キーで呼び出すところを、「上下矢印キー」で呼び出す、に変更するという趣旨です。以下のようにします。  
 ```sh
 # alternate mappings for "page up" and "page down" to search the history  
 # "\e[5~": history-search-backward
