@@ -17,4 +17,4 @@ Ubuntu のデフォルトのシェルはBash（Dash）ですが、初期設定�
 "\e[B": history-search-forward  
 ```  
 5. 設定を有効にするには、一度ログオフしてログインし直します。  
-<img src="images/inputrc2.png" alt="image">  
+<img src="images/inputrc2.pngy" alt="image">  
