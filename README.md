@@ -11,3 +11,4 @@
   8. 「Visual Studio Code」「Chrome」のサイトからdeb ファイルをDLしてインストール。
   9. git の設定。
   10. Visual Studio Code の設定。
+  11. vagrant でテスト環境を用意。
