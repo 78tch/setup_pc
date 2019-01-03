@@ -9,3 +9,5 @@
   6. 「apt-get」で「byobu」「git」「virtualbox」「vagrant」をインストール。  
   7. 「Ubuntuソフトウェア」で「Peek」「Discord」「OBS」をインストール。  
   8. 「Visual Studio Code」「Chrome」のサイトからdeb ファイルをDLしてインストール。
+  9. git の設定。
+  10. Visual Studio Code の設定。
