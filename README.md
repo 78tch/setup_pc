@@ -6,7 +6,7 @@
   3. 「言語サポート」でインストールを完了。  
   4. [「/etc/inputrc」で「history-search-backward」を有効](https://github.com/78tch/setup_pc/blob/master/inputrc.md)にする。  
   5. [「/etc/fstab」で2nd SSD を自動マウント](https://github.com/78tch/setup_pc/blob/master/fstab.md)する。  
-  6. 「apt-get」で「byobu」「git」「virtualbox」「vagrant」をインストール。  
+  6. [「apt-get」で「byobu」「git」「virtualbox」「vagrant」をインストール](https://github.com/78tch/setup_pc/blob/master/aptget.md)する。  
   7. 「Ubuntuソフトウェア」で「Peek」「Discord」「OBS」をインストール。  
   8. 「Visual Studio Code」「Chrome」のサイトからdeb ファイルをDLしてインストール。
   9. git の設定。
