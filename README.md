@@ -9,7 +9,7 @@
   6. [「apt-get」で「byobu」「git」「virtualbox」「vagrant」をインストール](https://github.com/78tch/setup_pc/blob/master/aptget.md)する。  
   7. 「Ubuntuソフトウェア」で「Peek」「Discord」「OBS」をインストール。  
   8. 「Visual Studio Code」「Chrome」のサイトからdeb ファイルをDLしてインストール。
-  9. git の設定。
+  9. [git の設定](https://github.com/78tch/setup_pc/blob/master/git.md)をする。
   10. Visual Studio Code の設定。
   11. vagrant でテスト環境を用意。
   12. Windows の場合。
