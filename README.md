@@ -10,6 +10,6 @@
   7. 「Ubuntuソフトウェア」で「Peek」「Discord」「OBS」をインストール。  
   8. 「Visual Studio Code」「Chrome」のサイトからdeb ファイルをDLしてインストール。
   9. [git の設定](https://github.com/78tch/setup_pc/blob/master/git.md)をする。
-  10. Visual Studio Code の設定。
-  11. vagrant でテスト環境を用意。
+  10. [Visual Studio Code の設定。](https://github.com/78tch/setup_pc/blob/master/vscode.md)
+  11. [vagrant でテスト環境を用意。](https://github.com/78tch/setup_pc/blob/master/vagrant.md)
   12. Windows の場合。
