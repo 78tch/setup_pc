@@ -8,7 +8,7 @@
 2. Garageband
 3. iMovie
 4. Visual Studio Code
-5. Git
+5. Git（コマンドライン・デベロッパツール）
 6. Pod Go Edit
 
 
