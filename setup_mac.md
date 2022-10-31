@@ -25,4 +25,5 @@
 7. OBS
 8. Kindle 
 
+## VS Code の設定
 
