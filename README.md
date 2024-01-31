@@ -17,6 +17,22 @@
 
 
 ## <a id="anchor2">２．git の設定</a>
+ユーザー名とメールアドレスを設定するのと、GitHub にアップロードする際に都度パスワード入力をしなくていいように、パスワードを保存する設定にします。
+```dos
+mypc C:\GitHub\hoge> git config --global user.name "hogehoge"
+mypc C:\GitHub\hoge> git config --global user.email hogehoge@example.com  
+mypc C:\GitHub\hoge> git config --global credential.helper store  
+```
 
+確認します。
+```dos
+mypc C:\GitHub\hoge> git config user.name  
+hogehoge  
+mypc C:\GitHub\hoge> git config user.email  
+hogehoge@example.com  
+mypc C:\GitHub\hoge> git config --global credential.helper  
+store  
+```  
+  
 
 ## <a id="anchor3">３．Visual Studio Code の設定、拡張機能の導入</a>
