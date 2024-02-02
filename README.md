@@ -5,7 +5,7 @@
 1. Windowsをクリーンインストールまたはリセットする際に、[ローカルユーザーでインストールする。](#anchor2)
 2. Windows Update を実行。
 3. 「netplwiz」を実行して、「ユーザーがこのコンピューターを使うには、ユーザー名とパスワードの入力が必要」のチェックを外す。チェック欄がない場合は、レジストリエディタで「SOFTWARE￥Microsoft￥Windows NT￥CurrentVersion￥PasswordLess￥Device」にある「DevicePasswordLessBuildVersion」の値を「2」から「0」にする。
-4. 「スクリーンショット」が「alt」+「PrntScrn」でできるように、
+4. デフォルトで「PrntScrn」が「画面キャプチャ」を開く、に設定されているのをオフにする。「設定->アクセシビリティ->キーボード->PrntScrnキーを使用して画面キャプチャを開く」をオフにする。
 5. Google Chrome をインストール。（ https://www.google.com/chrome/ ）
 6. LINE Windows 版をインストール。（ https://line.me/ja/ ）
 7. ZOOM Windows 版をインストール。（ https://zoom.us/ja/download ）
