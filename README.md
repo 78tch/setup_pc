@@ -2,21 +2,30 @@
 私が普段使いのパソコンをセットアップする手順をまとめます。  
 
 ## １．大まかな流れ
-1. Windows Update を実行。
-2. 「netplwiz」を実行して、「ユーザーがこのコンピューターを使うには、ユーザー名とパスワードの入力が必要」のチェックを外す。チェック欄がない場合は、レジストリエディタで「SOFTWARE￥Microsoft￥Windows NT￥CurrentVersion￥PasswordLess￥Device」にある「DevicePasswordLessBuildVersion」の値を「2」から「0」にする。
-3. Google Chrome をインストール。（ https://www.google.com/chrome/ ）
-4. LINE Windows 版をインストール。（ https://line.me/ja/ ）
-5. ZOOM Windows 版をインストール。（ https://zoom.us/ja/download ）
-6. Visual Studio Codeをインストール。（ https://azure.microsoft.com/ja-jp/products/visual-studio-code ）
-7. git Windows 版をインストール。（ https://gitforwindows.org/ ）
-8. [git の設定](#anchor2)
-9. [Visual Studio Code の設定、拡張機能の導入](#anchor3)
-10. Kindle Windows 版をインストール。（ https://www.amazon.co.jp/kindle-dbs/fd/kcp/ ）
-11. Amazon アプリストアをインストール。（ https://blogs.windows.com/windows-insider/2021/10/20/announcing-android-apps-on-windows-11-preview-for-windows-insiders-in-the-beta-channel/ ）
-12. Amazon アプリストアで、iRealPro をインストール。
+1. Windowsをクリーンインストールまたはリセットする際に、[ローカルユーザーでインストールする。](#anchor2)
+2. Windows Update を実行。
+3. 「netplwiz」を実行して、「ユーザーがこのコンピューターを使うには、ユーザー名とパスワードの入力が必要」のチェックを外す。チェック欄がない場合は、レジストリエディタで「SOFTWARE￥Microsoft￥Windows NT￥CurrentVersion￥PasswordLess￥Device」にある「DevicePasswordLessBuildVersion」の値を「2」から「0」にする。
+4. 「スクリーンショット」が「alt」+「PrntScrn」でできるように、
+5. Google Chrome をインストール。（ https://www.google.com/chrome/ ）
+6. LINE Windows 版をインストール。（ https://line.me/ja/ ）
+7. ZOOM Windows 版をインストール。（ https://zoom.us/ja/download ）
+8. Visual Studio Codeをインストール。（ https://azure.microsoft.com/ja-jp/products/visual-studio-code ）
+9. git Windows 版をインストール。（ https://gitforwindows.org/ ）
+10. [git の設定](#anchor3)
+11. [Visual Studio Code の設定、拡張機能の導入](#anchor4)
+12. Kindle Windows 版をインストール。（ https://www.amazon.co.jp/kindle-dbs/fd/kcp/ ）
+13. Amazon アプリストアをインストール。（ https://blogs.windows.com/windows-insider/2021/10/20/announcing-android-apps-on-windows-11-preview-for-windows-insiders-in-the-beta-channel/ ）
+14. Amazon アプリストアで、iRealPro をインストール。
 
+## <a id="anchor2">2.Windowsをローカルユーザーでセットアップする</a>
+1. セットアップ画面で、「サインイン」（Microsoftアカウント指定画面）まで進める。
+2. 「Shift」「F10」でコマンドプロンプトを立ち上げ、「start ms-settings:」と入力して、「設定」画面を起動させる。
+3. 「ネットワークとインターネット」に切り替えてWi-Fiを無効にする。
+4. さらに、コマンドプロンプトで「regedit」と入力してレジストリエディタを起動させる。
+5. 「HKEY_LOCAL_MACHINE￥SOFTWARE￥Microsoft￥Windows￥CurrentVersion￥OOBE」のなかで右クリックし、「DWORD値（３２ビット値）」を新規作成し名前を「BypassNRO」としたうえで、値を「1」にする。
+6. コマンドプロンプトで「shutdown /r /t 0」として再起動する。
 
-## <a id="anchor2">２．git の設定</a>
+## <a id="anchor3">3．git の設定</a>
 ユーザー名とメールアドレスを設定するのと、GitHub にアップロードする際に都度パスワード入力をしなくていいように、パスワードを保存する設定にします。
 ```dos
 mypc C:\GitHub\hoge> git config --global user.name "hogehoge"
@@ -35,7 +44,7 @@ store
 ```  
   
 
-## <a id="anchor3">３．Visual Studio Code の設定、拡張機能の導入</a>
+## <a id="anchor4">4．Visual Studio Code の設定、拡張機能の導入</a>
 1. 「日本語化する」：Code のインストール直後はUIも英語。なにはなくとも「Japanese Language Pack for Visual Studio Code」機能拡張をインストールして日本語化する。  
 2. 「スペース文字を表示する」：Render Whitespace を「all」にする。Markdown の改行である「スペース2個」の有無を見分けるため。  
 3. 「対応する括弧の色分け」：標準機能になったため、機能拡張を入れる必要はなくなった。  
