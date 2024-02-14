@@ -4,19 +4,22 @@
 ## １．大まかな流れ
 1. Windowsをクリーンインストールまたはリセットする際に、[ローカルユーザーでインストールする。](#anchor2)
 2. Windows Update を実行。
-3. 「netplwiz」を実行して、「ユーザーがこのコンピューターを使うには、ユーザー名とパスワードの入力が必要」のチェックを外す。チェック欄がない場合は、レジストリエディタで「HKEY_LOCAL_MACHINE￥SOFTWARE￥Microsoft￥Windows NT￥CurrentVersion￥PasswordLess￥Device」にある「DevicePasswordLessBuildVersion」の値を「2」から「0」にする。
-4. 「HKEY_LOCAL_MACHINE￥SOFTWARE￥Microsoft￥Windows NT￥CurrentVersion￥Winlogon」に文字列値で「AutoAdminLogon」を「1」で、「DefaultUserName」と「DefaultPassword」にログインさせたいIDを設定する。
-5. デフォルトで「PrntScrn」が「画面キャプチャ」を開く、に設定されているのをオフにする。「設定->アクセシビリティ->キーボード->PrntScrnキーを使用して画面キャプチャを開く」をオフにする。
-6. Google Chrome をインストール。（ https://www.google.com/chrome/ ）
-7. LINE Windows 版をインストール。（ https://line.me/ja/ ）
-8. ZOOM Windows 版をインストール。（ https://zoom.us/ja/download ）
-9. Visual Studio Codeをインストール。（ https://azure.microsoft.com/ja-jp/products/visual-studio-code ）
-10. git Windows 版をインストール。（ https://gitforwindows.org/ ）
-11. [git の設定](#anchor3)
-12. [Visual Studio Code の設定、拡張機能の導入](#anchor4)
-13. Kindle Windows 版をインストール。（ https://www.amazon.co.jp/kindle-dbs/fd/kcp/ ）
-14. Amazon アプリストアをインストール。（ https://blogs.windows.com/windows-insider/2021/10/20/announcing-android-apps-on-windows-11-preview-for-windows-insiders-in-the-beta-channel/ ）
-15. Amazon アプリストアで、iRealPro をインストール。
+3. 自動ログインとするため、「netplwiz」を実行して、「ユーザーがこのコンピューターを使うには、ユーザー名とパスワードの入力が必要」のチェックを外す。チェック欄がない場合は、レジストリエディタで「HKEY_LOCAL_MACHINE￥SOFTWARE￥Microsoft￥Windows NT￥CurrentVersion￥PasswordLess￥Device」にある「DevicePasswordLessBuildVersion」の値を「2」から「0」にする。
+4. 再起動時などにログイン画面で止まることのないように、「HKEY_LOCAL_MACHINE￥SOFTWARE￥Microsoft￥Windows NT￥CurrentVersion￥Winlogon」に文字列値で「AutoAdminLogon」を「1」で、「DefaultUserName」と「DefaultPassword」にログインさせたいIDを設定する。
+5. 画面電源オフやスリープをしないように、「システム->電源->画面とスリープ」で「なし」にする。
+6. スクリーンセーバーが起動しないように、「個人用設定->ロック画面->関連設定->スクリーンセーバー」で「なし」にする。
+7. 「ヒント」などが表示されないように、「システム->通知->追加の設定」をすべてオフにする。
+8. デフォルトで「PrntScrn」が「画面キャプチャ」を開く、に設定されているのをオフにする。「設定->アクセシビリティ->キーボード->PrntScrnキーを使用して画面キャプチャを開く」をオフにする。
+9. Google Chrome をインストール。（ https://www.google.com/chrome/ ）
+10. LINE Windows 版をインストール。（ https://line.me/ja/ ）
+11. ZOOM Windows 版をインストール。（ https://zoom.us/ja/download ）
+12. Visual Studio Codeをインストール。（ https://azure.microsoft.com/ja-jp/products/visual-studio-code ）
+13. git Windows 版をインストール。（ https://gitforwindows.org/ ）
+14. [git の設定](#anchor3)
+15. [Visual Studio Code の設定、拡張機能の導入](#anchor4)
+16. Kindle Windows 版をインストール。（ https://www.amazon.co.jp/kindle-dbs/fd/kcp/ ）
+17. Amazon アプリストアをインストール。（ https://blogs.windows.com/windows-insider/2021/10/20/announcing-android-apps-on-windows-11-preview-for-windows-insiders-in-the-beta-channel/ ）
+18. Amazon アプリストアで、iRealPro をインストール。
 
 ## <a id="anchor2">2.Windowsをローカルユーザーでセットアップする</a>
 1. セットアップ画面で、「サインイン」（Microsoftアカウント指定画面）まで進める。
