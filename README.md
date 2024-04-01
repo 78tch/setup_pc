@@ -43,7 +43,6 @@ mypc C:\GitHub\hoge> git config --global credential.helper store
 mypc C:\GitHub\hoge> git config --global http.proxy "http://proxy.hogehoge.com:8080"
 mypc C:\GitHub\hoge> git config --global https.proxy "http://proxys.hogehoge.com:8080"
 ```
-
   
 確認します。
 ```dos
